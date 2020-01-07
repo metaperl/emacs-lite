@@ -1,13 +1,13 @@
+(defvar bootstrap-version)
+(let ((bootstrap-file
+       (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
+      (bootstrap-version 5))
+  (unless (file-exists-p bootstrap-file)
+    (with-current-buffer
+        (url-retrieve-synchronously
+         "https://raw.githubusercontent.com/raxod502/straight.el/develop/install.el"
+          'inhibit-cookies)
+      (goto-char (point-max))
+      (eval-print-last-sexp)))
+  (load bootstrap-file nil 'nomessage))
 
-;; (add-to-list 'load-path (expand-file-name "~/downloads/elpy"))
-
-;; (load "elpy")
-;; (load "elpy-rpc")
-;; (load "elpy-shell")
-;; (load "elpy-profile")
-;; (load "elpy-refactor")
-
-; (setq stack-trace-on-error t)
-; (setq debug-on-error t)
-
-(provide 'python-setup)
