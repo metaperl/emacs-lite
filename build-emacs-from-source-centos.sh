@@ -19,7 +19,7 @@ git config --global https.postBuffer 524288000
 git config --global http.sslVerify false
 
 ## git clone
-git clone https://github.com/emacs-mirror/emacs.git --verbose --progress
+git clone https://github.com/emacs-mirror/emacs.git --verbose --progress --depth 1
 
 
 # build
