@@ -20,4 +20,4 @@
 
 
 
-(provide 'ido-setup)
+(provide 'init-ido-setup)

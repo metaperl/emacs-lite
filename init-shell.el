@@ -3,4 +3,4 @@
 (global-set-key (kbd "<f9>") 'shell-current-directory) 
 
 
-(provide 'shell-setup)
+(provide 'init-shell)

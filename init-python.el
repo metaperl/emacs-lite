@@ -12,4 +12,4 @@
   (load bootstrap-file nil 'nomessage))
 
 
-(provide 'python-setup)
+(provide 'init-python)

@@ -3,4 +3,4 @@
 (add-to-list 'auto-mode-alist '("\\.out\\'" . auto-revert-mode))
 
 
-(provide 'tail-mode)
+(provide 'init-tail-mode)

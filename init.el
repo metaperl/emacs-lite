@@ -1,5 +1,3 @@
-(require 'desktop)
-(desktop-save-mode 1)
 
 (setq dired-dwim-target t)
 
@@ -16,19 +14,17 @@
       (eval-print-last-sexp)))
   (load bootstrap-file nil 'nomessage))
 
+(setq compile-command "cd ~/bin; make serve-superset")
 
 
 (add-to-list 'load-path "~/emacs")
 
-(setq compile-command "cd ~/bin; make serve-superset")
+(require 'init-desktop)
+
 
 (require 'init-window-system)
-
-(require 'python-setup)
-(require 'shell-setup)
-
-(require 'backup)
-(require 'tail-mode)
-
-
-(require 'ido-setup)
+(require 'init-python)
+(require 'init-shell)
+(require 'init-backup)
+(require 'init-tail-mode)
+(require 'init-ido-setup)

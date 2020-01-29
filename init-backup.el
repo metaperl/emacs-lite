@@ -20,4 +20,4 @@
       kept-new-versions 5    ; keep some new versions                           
       kept-old-versions 2)   ; and some old ones, too 
 
-(provide 'backup)
+(provide 'init-backup)
